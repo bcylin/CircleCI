@@ -1,6 +1,8 @@
 machine:
   ruby:
-    version: 2.2.4
+    version: 2.2.3
 test:
   override:
     - rake
+  post:
+    - cat ground-control.json | python -mjson.tool
