@@ -1,5 +1,4 @@
-require "JSON"
-require "plist"
+require "json"
 
 task default: "update"
 
